@@ -68,10 +68,7 @@ export default class WebGLRenderer extends Renderer {
     // Validating
     if (!isGraph(graph))
       throw new Error('sigma/renderers/webgl: invalid graph instance.');
-
-    if (!(container instanceof HTMLElement))
-      throw new Error('sigma/renderers/webgl: container should be an html element.');
-
+    
     // Properties
     this.graph = graph;
     this.captors = {};
